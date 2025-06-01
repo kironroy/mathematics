@@ -1,0 +1,1 @@
+(()=>{"use strict";const t=document.getElementById("messageInput"),e=document.getElementById("submitButton"),n=document.getElementById("output");e.addEventListener("click",(()=>{const e=t.value;""!==e.trim()&&(function(t){const e=document.createElement("p");e.textContent=t,n.appendChild(e)}(e),t.value="")}))})();
