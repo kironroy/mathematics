@@ -7,22 +7,50 @@
     <title>Rose Store Sales</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js"></script>
     <script defer src="./dist/matrix.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <h1>Rose Store Sales Data</h1>
-    <p id="roses"></p>
-    <p id="mon-sales"></p>
-    <p id="tue-sales"></p>
-    <p id="wed-sales"></p>
-    <p id="total-sales"></p>
+    <main>
+        <h1>Rose Store Sales</h1>
+        <p>You sell roses. Here is a table of a 3-day sale.</p>
+        <div>
+            <table class="sales">
+                <tr>
+                    <td>Days</td>
+                    <th>Red Rose $3 each</th>
+                    <th>White Rose $4 each</th>
+                    <th>Yellow Rose $2 each</th>
+                </tr>
+                <tr>
+                    <td>Mon</td>
+                    <td>120</td>
+                    <td>80</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>Tues</td>
+                    <td>90</td>
+                    <td>70</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Wed</td>
+                    <td>60</td>
+                    <td>40</td>
+                    <td>20</td>
+                </tr>
+            </table>
+        </div>
+
+        <p>What are the <b>total sales</b> for the last 3-days?</p>
+        <p id="roses"></p>
+        <p id="mon-sales"></p>
+        <p id="tue-sales"></p>
+        <p id="wed-sales"></p>
+        <p id="total-sales"></p>
+    </main>
+
 </body>
 
 </html>
