@@ -84,6 +84,12 @@ main {
   pointer-events: none; /* Prevents clicking */
 }
 
+#joe, #sisters {
+  font-weight: 700;
+  font-size: 22px;
+  color: #000072;
+}
+
 
 a {
   color: blue;
@@ -265,6 +271,11 @@ h2 {
     background-color: var(--dark-bg);
     color: var(--dark-highlight-dark);
   }
+
+  #joe, #sisters {
+    color: var(--highlight-light);
+  }
+  
 
   .breadcrumb a {
     color: var(--drk-breadcrumb);
