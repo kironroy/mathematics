@@ -85,6 +85,9 @@ a {
   font-family: "Source Sans 3", sans-serif;
   font-size: 22px;
 }
+#shirt, #candy, #customers, #earned, #jeans {
+  font-size: 22px;
+}
 
 .typescript-a {
   color: blue;
