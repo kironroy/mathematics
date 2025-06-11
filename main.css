@@ -78,6 +78,13 @@ main {
   content: "";
 }
 
+.breadcrumb .active {
+  font-weight: bold;
+  color: darkred;
+  pointer-events: none; /* Prevents clicking */
+}
+
+
 a {
   color: blue;
   text-decoration: none;
