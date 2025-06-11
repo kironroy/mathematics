@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 
 :root {
   /* Light Mode Colors */
@@ -18,6 +18,7 @@
   --dark-header-alt: #3d4753;
   --dark-highlight-light: #eef1ff;
   --dark-highlight-dark: #ffffbd;
+  --drk-breadcrumb: #bb86fc;
 }
 
 html {
@@ -41,7 +42,6 @@ main {
   font-size: 20px;
 }
 
-
 .center-items {
   text-align: center;
 }
@@ -51,25 +51,32 @@ main {
   font-family: "Source Sans 3", sans-serif;
 }
 
-.percent-p{
+.percent-p {
   font-weight: 700;
 }
 
 .breadcrumb {
   list-style: none;
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 5px;
+  font-size: 16px;
+  padding: 8px;
+}
+
+.breadcrumb li {
+  display: inline-block;
 }
 
 .breadcrumb li::after {
-  content: ">";
-  margin-left: 10px;
+  content: "›";
+  margin-left: 8px;
+  color: gray;
 }
 
 .breadcrumb li:last-child::after {
   content: "";
 }
-
 
 a {
   color: blue;
@@ -98,7 +105,7 @@ a {
   box-shadow: 0 8px 9px -9px rgba(9, 9, 9, 0.8);
 }
 
-h1{
+h1 {
   text-align: center;
 }
 
@@ -108,12 +115,12 @@ h2 {
 }
 
 .matrix-titles {
-text-decoration: none;
+  text-decoration: none;
 }
 
 /* Tables */
 .sales {
-   font-family: "Source Sans 3", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
@@ -163,7 +170,6 @@ text-decoration: none;
     font-size: 22px;
   }
 
-  
   .nav-link {
     font-size: 24px;
   }
@@ -178,6 +184,17 @@ text-decoration: none;
 
   .link {
     font-size: 16px;
+  }
+
+  .breadcrumb {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+    font-size: 14px;
+  }
+
+  .breadcrumb li::after {
+    display: none;
   }
 }
 
@@ -224,9 +241,6 @@ text-decoration: none;
   }
 }
 
-
-
-
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
   body {
@@ -234,6 +248,9 @@ text-decoration: none;
     color: var(--dark-highlight-dark);
   }
 
+  .breadcrumb a {
+    color: var(--drk-breadcrumb);
+  }
   a {
     color: var(--dark-highlight-light);
   }
