@@ -83,7 +83,15 @@ a {
   text-decoration: none;
   font-weight: 400;
   font-family: "Source Sans 3", sans-serif;
-  font-size: 14px;
+  font-size: 22px;
+}
+
+.typescript-a {
+  color: blue;
+  text-decoration: none;
+  font-weight: 400;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 22px;
 }
 
 #topBtn {
