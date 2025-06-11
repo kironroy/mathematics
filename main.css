@@ -55,6 +55,22 @@ main {
   font-weight: 700;
 }
 
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.breadcrumb li::after {
+  content: ">";
+  margin-left: 10px;
+}
+
+.breadcrumb li:last-child::after {
+  content: "";
+}
+
+
 a {
   color: blue;
   text-decoration: none;
