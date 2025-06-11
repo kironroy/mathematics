@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pie Store Sales</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js"></script>
+    <script defer src="./dist/matrix2.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <main>
+        <h1>Pie Store Sales</h1>
+        <p>You sell pies 4 days a week.</p>
+
+        <div>
+            <table class="sales">
+                <tr>
+                    <td>Pies </td>
+                    <th>Mon</th>
+                    <th>Tues</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                </tr>
+                <tr>
+                    <td>Apple $3</td>
+                    <td>13</td>
+                    <td>9</td>
+                    <td>7</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Cherry $4</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Blueberry $2</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>3</td>
+                </tr>
+            </table>
+            <p class="uneven-matrix">*Uneven matrix dimensions (3 pies, 4 days)</p>
+ 
+        </div>
+        <p id="mon-pie-sales"></p>
+        <p id="tue-pie-sales"></p>
+        <p id="wed-pie-sales"></p>
+        <p id="thu-pie-sales"></p>
+        <p id="total-pie-sales"></p>
+    </main>
+
+</body>
+
+</html>

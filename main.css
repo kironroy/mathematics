@@ -36,6 +36,11 @@ main {
   padding: 20px;
 }
 
+.uneven-matrix {
+  font-style: italic;
+  font-size: 20px;
+}
+
 
 .center-items {
   text-align: center;
