@@ -88,7 +88,9 @@ main {
 }
 
 #joe,
-#sisters {
+#sisters,
+#moe,
+#taxi {
   font-weight: 700;
   font-size: 22px;
   color: #000072;
@@ -218,7 +220,7 @@ h2 {
   }
 
   a {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .link {
