@@ -301,9 +301,18 @@ h2 {
 
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
-  body {
+  body, html {
     background-color: var(--dark-bg);
     color: var(--dark-highlight-dark);
+  }
+
+  .typescript-a {
+    color: var(--highlight-light);
+  
+  }
+
+  .breadcrumb .active {
+    color: var(--highlight-light);
   }
 
   .banner {
