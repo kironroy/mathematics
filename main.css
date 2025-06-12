@@ -40,10 +40,9 @@ main {
 
 hr {
   border: none;
-  height: 2px;
-  margin: 20px 0;
-  background: linear-gradient(to right, #ccc, #888); /* Smooth transition */
-  opacity: 0.85;
+  height: 1px;
+  background-color: #d3d3d3; /* Light mode soft gray */
+  margin: 10px 0;
 }
 
 .uneven-matrix {
@@ -271,8 +270,6 @@ h2 {
     font-size: 22px;
   }
 
-
-
   .percent-p {
     font-size: 24px;
   }
@@ -301,14 +298,14 @@ h2 {
 
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
-  body, html {
+  body,
+  html {
     background-color: var(--dark-bg);
     color: var(--dark-highlight-dark);
   }
 
   .typescript-a {
     color: var(--highlight-light);
-  
   }
 
   .breadcrumb .active {
@@ -341,8 +338,7 @@ h2 {
   }
 
   hr {
-    background: linear-gradient(to right, #4a4a4a, #888);
-    opacity: 0.9;
+    background-color: #505050; /* Soft gray for dark mode */
   }
 
   #joe,
