@@ -21,14 +21,12 @@
   --drk-breadcrumb: #bb86fc;
 }
 
-html {
+html,
+body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-}
-
-
-body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
   background-color: var(--html-bk-color);
   font-family: "Source Sans 3", sans-serif;
   font-weight: 400;
@@ -97,13 +95,13 @@ main {
 }
 
 .banner {
-  width: 100%;
+  width: 100vw;
   height: 200px;
   background-image: url("https://cdn.glitch.global/2a320c50-0d4b-4d99-9f9d-7334d9bc4008/math_banner.webp?v=1749683170306");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
-
 a {
   color: blue;
   text-decoration: none;
