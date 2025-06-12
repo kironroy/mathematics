@@ -2,23 +2,23 @@
 
 :root {
   /* Light Mode Colors */
-  --html-bk-color: #ffffff;
-  --text-color: #222;
-  --h3-bk-color: #2b002c;
-  --h4-bk-color: #6b1d6f;
-  --highlight-light: #eef1ff;
-  --highlight-dark: #ffffbd;
-  --table-light-row: #f2f2f2;
-  --table-light-header: #002c15;
-  --light-button: #0275d8;
+  --html-bk-color: #f8f9fa;
+  --text-color: #333;
+  --h3-bk-color: #3c1053;
+  --h4-bk-color: #8c3f99;
+  --highlight-light: #dfe6f1;
+  --table-light-row: #ebebeb;
+  --table-light-header: #003f2b;
+  --light-button: #0288d1;
 
   /* Dark Mode Colors */
-  --dark-bg: #2d333b;
-  --dark-header: #1c2025;
-  --dark-header-alt: #3d4753;
-  --dark-highlight-light: #eef1ff;
-  --dark-highlight-dark: #ffffbd;
-  --drk-breadcrumb: #bb86fc;
+  --dark-bg: #1e1e2e;
+  --dark-text-color: #e0e0e0;
+  --dark-header: #151521;
+  --dark-header-alt: #292945;
+  --dark-highlight-light: #b8c1ec;
+  --dark-highlight-dark: #5bd4a5;
+  --dark-link: #bb86fc;
 }
 
 html,
@@ -36,6 +36,14 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  margin: 20px 0;
+  background: linear-gradient(to right, #ccc, #888); /* Smooth transition */
+  opacity: 0.85;
 }
 
 .uneven-matrix {
@@ -263,9 +271,7 @@ h2 {
     font-size: 22px;
   }
 
-  .nav-link {
-    font-size: 24px;
-  }
+
 
   .percent-p {
     font-size: 24px;
@@ -304,11 +310,6 @@ h2 {
     background-image: url("https://cdn.glitch.global/2a320c50-0d4b-4d99-9f9d-7334d9bc4008/math_drk_banner.webp?v=1749683393701");
   }
 
-  #joe,
-  #sisters {
-    color: var(--highlight-light);
-  }
-
   .breadcrumb a {
     color: var(--drk-breadcrumb);
   }
@@ -328,6 +329,20 @@ h2 {
   .sales tr:hover {
     background-color: #000072;
     color: yellow;
+  }
+
+  hr {
+    background: linear-gradient(to right, #4a4a4a, #888);
+    opacity: 0.9;
+  }
+
+  #joe,
+  #sisters,
+  #moe,
+  #taxi {
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--highlight-light);
   }
 
   .sales th {
