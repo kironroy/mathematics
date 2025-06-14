@@ -108,6 +108,15 @@ hr {
   color: #000072;
 }
 
+.answer-txt summary {
+  color: blue; /* Sets the summary text to blue */
+  cursor: pointer;
+}
+
+.answer-txt p {
+  color: var(--text-color); /* Sets inner <p> elements to black */
+}
+
 .banner {
   width: 100vw;
   height: 200px;
@@ -309,6 +318,15 @@ h2 {
   html {
     background-color: var(--dark-bg);
     color: var(--dark-highlight-dark);
+  }
+
+  .answer-txt summary {
+    color: var(--dark-highlight-dark);
+    cursor: pointer;
+  }
+  
+  .answer-txt p {
+    color: var(--dark-highlight-dark)
   }
 
   details {
