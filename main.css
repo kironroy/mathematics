@@ -38,6 +38,13 @@ main {
   padding: 20px;
 }
 
+details {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: blue;
+}
+
 hr {
   border: none;
   height: 1px;
@@ -301,6 +308,10 @@ h2 {
   body,
   html {
     background-color: var(--dark-bg);
+    color: var(--dark-highlight-dark);
+  }
+
+  details {
     color: var(--dark-highlight-dark);
   }
 
