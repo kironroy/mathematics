@@ -263,6 +263,15 @@ h2 {
   }
 }
 
+pre[class*="language-"] {
+  background: #1d1f21; /* deep black */
+  color: #f8f8f2;
+  padding: 1em;
+  border-radius: 6px;
+  overflow: auto;
+}
+
+
 @media screen and (min-width: 601px) {
   body {
     font-size: 18px; /* Increased for better readability */
