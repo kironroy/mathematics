@@ -1,0 +1,48 @@
+{
+  "content": [
+    {
+      "link": "https://en.wikipedia.org/wiki/Thomas_Pynchon",
+      "paragraph": [
+        "<b>Thomas Pynchon",
+        "Known for:</b> <i>Gravity's Rainbow</i>",
+        "",
+        "<b>Quote</b>: It's been a prevalent notion. Fallen sparks. Fragments of vessels broken at the Creation. And someday, somehow, before the end, a gathering back to home. A messenger from the Kingdom, arriving at the last moment. But I tell you there is no such message, no such home -- only the millions of last moments . . . nothing more. Our history is an aggregate of last moments."
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Thomas_Pynchon%2C_high_school_senior_portrait%2C_1953.jpg"
+    },
+     {
+      "link": "https://en.wikipedia.org/wiki/Zadie_Smith",
+      "paragraph": ["<b>Zaddie Smith", "Known for</b>: <i>White Teeth</i>","","<b>Quote</b>: If religion is the opiate of the people, tradition is an even more sinister analgesic, simply because it rarely appears sinister. If religion is a tight band, a throbbing vein, and a needle, tradition is a far homelier concoction: poppy seeds ground into tea; a sweet cocoa drink laced with cocaine; the kind of thing your grandmother might have made."],
+      "image": "https://radcliffe-harvard-edu.imgix.net/8e48d295-9675-4073-aad7-c5c50adb7e59/Smith-Zadie_0258_radcliffe-TR.jpg?auto=compress%2Cformat&fit=min&fm=jpg&q=80&rect=71%2C297%2C1783%2C1789"
+    },
+        {
+      "link": "https://en.wikipedia.org/wiki/Ralph_Ellison",
+      "paragraph": [
+        "<b>Ralph Ellison",
+        "Known for</b>: <i>Invisible Man</i>","",
+        "<b>Quote</b>: I am an invisible man. No I am not a spook like those who haunted Edgar Allen Poe: Nor am I one of your Hollywood movie ectoplasms. I am a man of substance, of flesh and bone, fiber and liquids, and I might even be said to possess a mind. I am invisible, simply because people refuse to see me."
+      ],
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Ralph_Ellison_photo_portrait_seated.jpg/500px-Ralph_Ellison_photo_portrait_seated.jpg"
+    },
+    {
+      "link": "https://en.wikipedia.org/wiki/William_Gaddis",
+      "paragraph": [
+        "<b>William Gaddis",
+        "Known for</b>: <i>JR</i>","",
+        "<b>Quote</b>: I mean why should somebody go steal and break the law to get all they can when there's always some law where you can be legal and get it all anyway!"
+      ],
+      "image": "https://asterism-files.s3.amazonaws.com/e6eec95c-8b29-49f9-974e-7c899bb160f8/1691810284-1200.jpg"
+    },
+   
+     {
+      "link": "https://en.wikipedia.org/wiki/Don_DeLillo",
+      "paragraph": ["<b>Don DeLillo", "Known for</b>: <i>White Noise</i>","","<b>Quote</b>: When I read obituaries I always note the age of the deceased. Automatically I relate this figure to my own age. Four years to go, I think. Nine more years. Two years and I'm dead. The power of numbers is never more evident than when we use them to speculate on the time of our dying.."],
+      "image": "https://static01.nyt.com/images/2010/02/04/arts/04delillo_CA0/04delillo_CA0-superJumbo.jpg?quality=75&auto=webp"
+    },
+      {
+      "link": "https://en.wikipedia.org/wiki/David_Foster_Wallace",
+      "paragraph": ["<b>David Foster Wallace", "Known for</b>: <i>Infinite Jest</i>","","<b>Quote</b>: What passes for hip cynical transcendence of sentiment is really some kind of fear of being really human, since to be really human [...] is probably to be unavoidably sentimental and naïve and goo-prone and generally pathetic."],
+      "image": "https://media.npr.org/assets/img/2011/04/20/david-foster-wallace-0371f1d13715e943e5271649e2d123655eb5ac35.jpg?s=600&c=85&f=webp"
+    }
+  ]
+}
