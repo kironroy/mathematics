@@ -23,8 +23,10 @@
   <link href="favicon-16x16.png" />
   <link href="favicon-32x32.png" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js"></script>
-  <script defer src="./dist/matrix1.js"></script>
   <link rel="stylesheet" href="main.css">
+  <script defer src="./dist/matrix1.js"></script>
+  <script defer src="breadcrumb.js"></script>
+  
 
 </head>
 
@@ -32,20 +34,9 @@
   <div class="banner"></div>
   <main>
     <h1>Taco Store Sales</h1>
-    <hr>
-    <nav aria-label="Breadcrumb">
-      <ul class="breadcrumb">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="roses.html">1st Matrix Example</a></li>
-        <li><a href="tacos.html" class="active">2nd Matrix Example</a></li>
-        <li><a href="pies.html">3rd Matrix Example</a></li>
-        <li><a href="algebra.html">Algebra</a></li>
-        <li><a href="percentages.html">Percentages</a></li>
-        <li><a href="polynomials.html">Polynomials</a></li>
-        <li><a href="functions.html">Functions</a></li>
-      </ul>
-    </nav>
-    <hr>
+  <hr>
+  <div id="breadcrumb-container"></div>
+  <hr>
     <p>You sell tacos 6 days a week.</p>
     <div>
       <table class="sales">

@@ -2,89 +2,80 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Percent Change Calculator</title>
-    <meta name="description" content="Math with TypeScript." />
-    <meta property="og:title" content="Math with TypeScript" />
-    <meta property="og:description" content="Math TypeScript" />
-    <meta property="og:url" content="https://mathematics-six.vercel.app/" />
-    <link rel="canonical" href="https://mathematics-six.vercel.app/" />
-    <meta property="og:image" content="/math_twitter.png" />
-    <meta property="og:image:alt" content="companies" />
-    <meta property="og:locale:alt" content="en_US" />
-    <meta property="og:type" content="website" />
-    <meta property="twitter:card" content="summary_large_image" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Percent Change Calculator</title>
+  <meta name="description" content="Math with TypeScript." />
+  <meta property="og:title" content="Math with TypeScript" />
+  <meta property="og:description" content="Math TypeScript" />
+  <meta property="og:url" content="https://mathematics-six.vercel.app/" />
+  <link rel="canonical" href="https://mathematics-six.vercel.app/" />
+  <meta property="og:image" content="/math_twitter.png" />
+  <meta property="og:image:alt" content="companies" />
+  <meta property="og:locale:alt" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="twitter:card" content="summary_large_image" />
 
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="site.css" />
-    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js" defer></script>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="site.css" />
+  <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js" defer></script>
+  <script src="breadcrumb.js" defer></script>
 
-    <script defer>
-        function mapAndSum(fn) {
-            return function (numbers) {
-                return numbers.map(fn).reduce(function (total, val) {
-                    return total + val;
-                }, 0);
-            };
-        }
+  <script defer>
+    function mapAndSum(fn) {
+      return function (numbers) {
+        return numbers.map(fn).reduce(function (total, val) {
+          return total + val;
+        }, 0);
+      };
+    }
 
-        document.addEventListener("DOMContentLoaded", function () {
-            const sumOfSquares = mapAndSum(function (x) { return x * x; });
-            const sumOfDoubles = mapAndSum(function (x) { return x * 2; });
+    document.addEventListener("DOMContentLoaded", function () {
+      const sumOfSquares = mapAndSum(function (x) { return x * x; });
+      const sumOfDoubles = mapAndSum(function (x) { return x * 2; });
 
-            const examples = [
-                { label: "Sum of Squares [3, 2]", formula: "3² + 2² = 9 + 4", result: sumOfSquares([3, 2]) },
-                { label: "Sum of Doubles [3, 1]", formula: "3×2 + 1×2 = 6 + 2", result: sumOfDoubles([3, 1]) }
-            ];
+      const examples = [
+        { label: "Sum of Squares [3, 2]", formula: "3² + 2² = 9 + 4", result: sumOfSquares([3, 2]) },
+        { label: "Sum of Doubles [3, 1]", formula: "3×2 + 1×2 = 6 + 2", result: sumOfDoubles([3, 1]) }
+      ];
 
-            const output = document.getElementById("output");
-            examples.forEach(({ label, formula, result }) => {
-                const li = document.createElement("li");
-                li.innerHTML = `<strong>${label}</strong>: ${formula} → <code>${result}</code>`;
-                output.appendChild(li);
-            });
-        });
-    </script>
+      const output = document.getElementById("output");
+      examples.forEach(({ label, formula, result }) => {
+        const li = document.createElement("li");
+        li.innerHTML = `<strong>${label}</strong>: ${formula} → <code>${result}</code>`;
+        output.appendChild(li);
+      });
+    });
+  </script>
 </head>
 
 <body>
-    <div class="banner"></div>
+  <div class="banner"></div>
 
-    <main>
-        <h1>Functions</h1>
-        <hr />
-        <nav aria-label="Breadcrumb">
-            <ul class="breadcrumb">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="roses.html">1st Matrix Example</a></li>
-                <li><a href="tacos.html">2nd Matrix Example</a></li>
-                <li><a href="pies.html">3rd Matrix Example</a></li>
-                <li><a href="algebra.html">Algebra</a></li>
-                <li><a href="percentages.html">Percentages</a></li>
-                <li><a href="polynomials.html">Polynomials</a></li>
-                <li><a href="functions.html" class="active">Functions</a></li>
-            </ul>
-        </nav>
+  <main>
+    <h1>Functions</h1>
+    <hr>
+    <div id="breadcrumb-container"></div>
+    <hr>
 
-        <h1>Higher-Order Functions</h1>
+    <h1>Higher-Order Functions</h1>
 
-        <p>
-            A <strong>higher-order function</strong> is a function that either:
-        </p>
-        <ul>
-            <li>Takes another function as a parameter</li>
-            <li>Returns a new function as its result</li>
-        </ul>
-        <p>
-            This enables patterns like reusability, abstraction, and modular composition, making your code more
-            expressive and powerful.
-        </p>
+    <p>
+      A <strong>higher-order function</strong> is a function that either:
+    </p>
+    <ul>
+      <li>Takes another function as a parameter</li>
+      <li>Returns a new function as its result</li>
+    </ul>
+    <p>
+      This enables patterns like reusability, abstraction, and modular composition, making your code more
+      expressive and powerful.
+    </p>
 
-        <h3>mapAndSum function</h3>
-        <pre><code class="language-javascript">
+    <h3>mapAndSum function</h3>
+    <pre><code class="language-javascript">
 function mapAndSum(fn) {
   return function(numbers) {
     return numbers.map(fn).reduce(function(total, val) {
@@ -94,16 +85,16 @@ function mapAndSum(fn) {
 }
     </code></pre>
 
-        <p>
-            <code>mapAndSum</code> is a <strong>higher-order function</strong> because it accepts a function
-            (<code>fn</code>)
-            as input to control the logic of transforming array elements. Then it maps and reduces the data to return a
-            total.
-        </p>
+    <p>
+      <code>mapAndSum</code> is a <strong>higher-order function</strong> because it accepts a function
+      (<code>fn</code>)
+      as input to control the logic of transforming array elements. Then it maps and reduces the data to return a
+      total.
+    </p>
 
-        <h3>Examples & Output</h3>
-        <ul id="output"></ul>
-    </main>
+    <h3>Examples & Output</h3>
+    <ul id="output"></ul>
+  </main>
 </body>
 
 </html>

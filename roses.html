@@ -23,8 +23,10 @@
   <link href="favicon-16x16.png" />
   <link href="favicon-32x32.png" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js"></script>
-  <script defer src="./dist/matrix.js"></script>
   <link rel="stylesheet" href="main.css">
+  <script defer src="./dist/matrix.js"></script>
+  <script defer src="./dist/percentages.js"></script>
+  <script defer src="breadcrumb.js"></script>
 </head>
 
 <body>
@@ -32,18 +34,7 @@
   <main>
     <h1>Rose Store Sales</h1>
     <hr>
-    <nav aria-label="Breadcrumb">
-      <ul class="breadcrumb">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="roses.html" class="active">1st Matrix Example</a></li>
-        <li><a href="tacos.html">2nd Matrix Example</a></li>
-        <li><a href="pies.html">3rd Matrix Example</a></li>
-        <li><a href="algebra.html">Algebra</a></li>
-        <li><a href="percentages.html">Percentages</a></li>
-        <li><a href="polynomials.html">Polynomials</a></li>
-        <li><a href="functions.html">Functions</a></li>
-      </ul>
-    </nav>
+    <div id="breadcrumb-container"></div>
     <hr>
     <p>You sell roses. Here is a table of a 3-day sale.</p>
     <div>
@@ -81,7 +72,9 @@
       <p id="mon-sales"></p>
       <p id="tue-sales"></p>
       <p id="wed-sales"></p>
-      <b> <p id="total-sales"></p></b>
+      <b>
+        <p id="total-sales"></p>
+      </b>
     </details>
   </main>
 

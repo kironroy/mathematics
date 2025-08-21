@@ -16,13 +16,14 @@
   <meta property="og:locale:alt" content="en_US" />
   <meta property="og:type" content="website" />
   <meta property="twitter:card" content="summary_large_image" />
-  <link rel="stylesheet" href="main.css" />
   <link href="android-chrome-192x192.png" />
   <link href="android-chrome-512x512.png" />
   <link href="apple-touch-icon.png" />
   <link href="favicon.ico?v=2" />
   <link href="favicon-16x16.png" />
   <link href="favicon-32x32.png" />
+  <link rel="stylesheet" href="main.css" />
+  <script src="breadcrumb.js" defer></script>
 </head>
 
 <body>
@@ -30,21 +31,11 @@
   <main>
     <h1>Mathematics</h1>
     <hr>
-    <nav aria-label="Breadcrumb">
-      <ul class="breadcrumb">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="roses.html">1st Matrix Example</a></li>
-        <li><a href="tacos.html">2nd Matrix Example</a></li>
-        <li><a href="pies.html">3rd Matrix Example</a></li>
-        <li><a href="algebra.html">Algebra</a></li>
-        <li><a href="percentages.html">Percentages</a></li>
-        <li><a href="polynomials.html">Polynomials</a></li>
-        <li><a href="functions.html">Functions</a></li>
-      </ul>
-    </nav>
+    <div id="breadcrumb-container"></div>
     <hr>
 
-    <p>Explore matrices, percentages, algebra and polynomials written in TypeScript.  <a class="typescript-a" href="https://github.com/kironroy/mathematics">GitHub Repo</a>.</p>
+    <p>Explore matrices, percentages, algebra and polynomials written in TypeScript. <a class="typescript-a"
+        href="https://github.com/kironroy/mathematics">GitHub Repo</a>.</p>
     <p><a class="typescript-a" href="https://www.typescriptlang.org/">TypeScript </a>is a strongly typed programming
       language that builds
       on JavaScript. A strongly typed language enforces strict rules about how different data types interact. A
@@ -52,7 +43,7 @@
       convert one type to another type. TypeScript offers better tooling and
       error-checking. TypeScript compiles to JavaScript.</p>
 
-      <p>Pick a subject and go over the problems. 👍</p>
+    <p>Pick a subject and go over the problems. 👍</p>
 
 
 

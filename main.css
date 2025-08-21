@@ -79,6 +79,7 @@ hr {
   padding: 8px;
 }
 
+
 .breadcrumb li {
   display: inline-block;
 }
@@ -87,17 +88,22 @@ hr {
   content: "›";
   margin-left: 8px;
   color: gray;
+  font-weight: 16px;
 }
 
 .breadcrumb li:last-child::after {
   content: "";
 }
 
+
+
 .breadcrumb .active {
+  font-size: 18px;
   font-weight: bold;
   color: darkred;
-  pointer-events: none; /* Prevents clicking */
+  pointer-events: none;
 }
+
 
 #joe,
 #sisters,
@@ -108,12 +114,10 @@ hr {
   color: #000072;
 }
 
-
-
 .answer-txt summary {
   color: blue; /* Sets the summary text to blue */
   cursor: pointer;
-  margin-bottom: 50px; 
+  margin-bottom: 50px;
 }
 
 .answer-txt p {
@@ -271,7 +275,6 @@ pre[class*="language-"] {
   overflow: auto;
 }
 
-
 @media screen and (min-width: 601px) {
   body {
     font-size: 18px; /* Increased for better readability */
@@ -336,9 +339,9 @@ pre[class*="language-"] {
     color: var(--dark-highlight-dark);
     cursor: pointer;
   }
-  
+
   .answer-txt p {
-    color: var(--dark-highlight-dark)
+    color: var(--dark-highlight-dark);
   }
 
   details {
@@ -353,12 +356,11 @@ pre[class*="language-"] {
     color: var(--highlight-light);
   }
 
-   .banner {
+  .banner {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     opacity: 80%; /* Slightly transparent for dark mode */
   }
-
 
   .breadcrumb a {
     color: var(--drk-breadcrumb);
