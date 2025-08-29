@@ -1,7 +1,5 @@
 # Mathematics
 
-This project is based on converting this [page](https://kironroy.dev/mathjs) into  TypeScript. 
-
 ## Sources
 
 - [W3 Schools](https://www.w3schools.com/ai/ai_matrices.asp) <sup>1</sup>  
